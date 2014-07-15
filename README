@@ -1,0 +1,33 @@
+Melodic Analyzer
+By: Nathanial Karahalis
+(C)2013
+Version: 1.02a
+*This version is considered stable under GNU/Linux only*
+
+*April 11,2013 23:43 EDT*
+To Compile, make sure you have mingw64 installed and run the build.sh script.
+The GNU/Linux version works completely, however, there is no error handling employed
+so use with care. I am unable to run the win32 binary properly on my system
+as it is 64bit only. Under Virtual Box on WOW64 it loads and produces an bad allocation
+error. The win64 version works in my version of Wine but also creates an error when
+searching arrays. I did get it to produce a file ONCE but have been unable
+to reproduce the circumstances leading to it.
+
+TODO:
+      -Debug Windows Version
+      -Test on Darwin/OSX
+      -Make a GUI with PNG rendering
+
+Known Issues:
+
+      Linux
+           1. There is no error handling of any kind.
+           2. Note name input is case-sensitive so use upper case letters only.
+           3. There must be a space between the note name symbol and the octave indicator. 
+      Win32/Win64
+           1. Doesn't work... Something in the way my pointers/variables are handled.
+ 	   2. Note name input is case-sensitive so use upper case letters only.
+           3. There must be a space between the note name symbol and the octave indicator. 
+      OSX/Darwin
+           1. Untested. If you desire to try it, I'd start with the linux source. It might
+           just work with out modification. There isn't a good reason why it shouldn't anyways.
